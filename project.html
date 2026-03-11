@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Campus Lost & Found</title>
+<style>
+body{
+font-family: Arial;
+background:#f4f4f4;
+text-align:center;
+}
+
+header{
+background:#2c3e50;
+color:white;
+padding:20px;
+}
+
+.container{
+background:white;
+width:400px;
+margin:auto;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+input,textarea{
+width:90%;
+padding:10px;
+margin:10px;
+}
+
+button{
+background:#3498db;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Campus Lost & Found System</h1>
+</header>
+
+<div class="container">
+<h2>Report Lost Item</h2>
+
+<label for="itemName">Item Name:</label><br>
+<input type="text" id="itemName" placeholder="Item Name"><br>
+
+<label for="description">Item Description:</label><br>
+<textarea id="description" placeholder="Item Description"></textarea><br>
+
+<label for="location">Location Lost:</label><br>
+<input type="text" id="location" placeholder="Location Lost"><br>
+
+<label for="timeLost">Time Lost:</label><br>
+<input type="datetime-local" id="timeLost"><br>
+
+<label for="photo">Upload Photo:</label><br>
+<input type="file" id="photo" accept="image/*"><br>
+
+<label for="contact">Your Contact:</label><br>
+<input type="text" id="contact" placeholder="Your Contact"><br>
+
+<button>Submit</button>
+
+</div>
+
+<div class="container">
+<h2>Report Lost Person</h2>
+
+<label for="personNameLost">Person Name:</label><br>
+<input type="text" id="personNameLost" placeholder="Person Name"><br>
+
+<label for="personDescriptionLost">Description:</label><br>
+<textarea id="personDescriptionLost" placeholder="Description (age, clothing, etc.)"></textarea><br>
+
+<label for="locationLostPerson">Last Seen Location:</label><br>
+<input type="text" id="locationLostPerson" placeholder="Last Seen Location"><br>
+
+<label for="timeLostPerson">Time Last Seen:</label><br>
+<input type="datetime-local" id="timeLostPerson"><br>
+
+<label for="photoLostPerson">Upload Photo:</label><br>
+<input type="file" id="photoLostPerson" accept="image/*"><br>
+
+<label for="contactLostPerson">Your Contact:</label><br>
+<input type="text" id="contactLostPerson" placeholder="Your Contact"><br>
+
+<button>Submit</button>
+
+</div>
+
+<div class="container">
+<h2>Report Found Person</h2>
+
+<label for="personNameFound">Person Name (if known):</label><br>
+<input type="text" id="personNameFound" placeholder="Person Name"><br>
+
+<label for="personDescriptionFound">Description:</label><br>
+<textarea id="personDescriptionFound" placeholder="Description (age, clothing, etc.)"></textarea><br>
+
+<label for="locationFoundPerson">Location Found:</label><br>
+<input type="text" id="locationFoundPerson" placeholder="Location Found"><br>
+
+<label for="timeFoundPerson">Time Found:</label><br>
+<input type="datetime-local" id="timeFoundPerson"><br>
+
+<label for="photoFoundPerson">Upload Photo:</label><br>
+<input type="file" id="photoFoundPerson" accept="image/*"><br>
+
+<label for="contactFoundPerson">Your Contact:</label><br>
+<input type="text" id="contactFoundPerson" placeholder="Your Contact"><br>
+
+<button>Submit</button>
+
+</div>
+
+</body>
+</html>
